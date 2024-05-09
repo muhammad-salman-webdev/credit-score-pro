@@ -34,14 +34,19 @@
 }
 
 /* Buttons */
-.btn-trans {
+.btn-trans,
+.btn-dark,
+.btn-light {
+    padding: 12px 36px;
+    border-radius: 8px;
+    transition: all .3s ease;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    padding: 12px 36px;
-    border-radius: 8px;
+}
+
+.btn-trans {
     color: var(--black);
-    transition: all .3s ease;
     border: 1px solid transparent;
 }
 
@@ -51,13 +56,7 @@
 
 /* Btn Dark */
 .btn-dark {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
     color: white;
-    transition: all .3s ease;
-    padding: 12px 36px;
-    border-radius: 8px;
     background: var(--black);
     display: flex;
     align-items: center;
@@ -72,12 +71,6 @@
 
 /* Btn Light */
 .btn-light {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    transition: all .3s ease;
-    padding: 12px 36px;
-    border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -101,8 +94,16 @@
     padding: 10px 0;
 }
 
+.header-container .logo {
+    display: flex;
+}
+
 .header-container .logo img {
     width: 170px;
+}
+
+.responsive-menu-btn {
+    display: none;
 }
 
 .navbar-buttons {
